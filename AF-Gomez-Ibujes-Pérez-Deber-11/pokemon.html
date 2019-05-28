@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JUEGO DE POKEMONS</title>
+    <link rel="stylesheet" href="diseño.css">
+    <script src = "datosPokemon.js"></script>
+</head>
+<body>
+    <div style="width: 40%; margin-left: auto;margin-right: auto; margin-top: 50px">
+    <form name= "formulario" method="get">
+        Seleccione su Pokemon
+        <select  type= "text" name="name" id="name" required>
+            <option value="Pikachu">Pikachu</option>
+            <option value="Charmander">Charmander</option>
+            <option value="Aerosol">Aerosol</option>
+            <option value="Cocotar">Cocotar</option>
+            <option value="Zaflax">Zaflax</option>
+            <option value="Trinkroot">Trinkroot</option>
+            <option value="Toxibat">Toxibat</option>
+        </select>
+        <br>
+        <br>
+        Seleccione su Rival
+        <select type= "text" name="name2" id="name2" required>
+            <option value="Pikachu">Pikachu</option>
+            <option value="Charmander">Charmander</option>
+            <option value="Aerosol">Aerosol</option>
+            <option value="Cocotar">Cocotar</option>
+            <option value="Zaflax">Zaflax</option>
+            <option value="Trinkroot">Trinkroot</option>
+            <option value="Toxibat">Toxibat</option>
+        </select>
+        <br>
+        <br>
+        <input type="button" id="btn" name="btn" value="Aceptar" onclick="crearPokemons()">
+        <input type="button" id="btn1" value="Atacar" onclick="atackPokemon()">
+        <br>
+        <br>
+        <label for="nomPok1">Su Pokemon : </label>
+        <input type="text" name="nomPokemon1" id="nomPok1">
+        <br>
+        <br>
+        <label for="vidaPok1">Puntos de Vida: </label>
+        <input type="text" name="vidaPokemon1" id="vidaPok1">
+        <br>
+        <br>
+        <label for="nomPok2">Pokemon Rival:</label>
+        <input type="text" name="nomPokemon2" id="nomPok2">
+        <br>
+        <br>
+        <label for="vidaPok2">Puntos de Vida: </label>
+        <input type="text" name="vidaPokemon2" id="vidaPok2">
+    </form>
+    </div>
+</body>
+</html>
